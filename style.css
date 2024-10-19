@@ -111,6 +111,15 @@ section {
     margin-bottom: 30px;
 }
 
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
 .content {
     display: flex;
     justify-content: center;
@@ -239,6 +248,92 @@ section {
     font-size: 1.3em;
     padding: 0 12px 0 0;
 }
+
+#desktop-apps .content {
+    display: flex;              /* Flexbox layout */
+    flex-wrap: wrap;            /* Allow wrapping if necessary */
+    gap: 20px;                  /* Space between images */
+    justify-content: center;    /* Center the images horizontally */
+}
+
+#desktop-apps .content .project-image img {
+    width: 400px;               /* Adjust the image size */
+    height: auto;               /* Maintain aspect ratio */
+    border-radius: 10px;        /* Optional: round corners */
+    border: 1px solid #ddd;     /* Optional: border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#desktop-apps .content .project-image img:hover {
+    transform: scale(1.2);      /* Enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Optional: shadow */
+}
+
+
+/* General styles for the section */
+#flappy-bird .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the images */
+}
+
+#flappy-bird .project-image img {
+    width: 400px;  /* Adjust size of the images */
+    height: auto;  /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    border: 1px solid #ddd; /* Optional: Border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+}
+
+#flappy-bird .project-image img:hover {
+    transform: scale(1.2);  /* Enlarge image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+}
+
+/* General styles for the Rocket game section */
+#rocket-game .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between images */
+    justify-content: center; /* Center the images */
+}
+
+#rocket-game .project-image img {
+    width: 150px;  /* Adjust the size of the images */
+    height: auto;  /* Maintain the aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+    border: 1px solid #ddd; /* Optional: Border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+}
+
+#rocket-game .project-image img:hover {
+    transform: scale(1.2);  /* Enlarge image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+}
+/* General styles for the Games section */
+#games .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;                  /* Space between images */
+    justify-content: center;    /* Center the images horizontally */
+}
+
+#games .project-image img {
+    width: 400px;               /* Adjust the image size */
+    height: auto;               /* Maintain aspect ratio */
+    border-radius: 10px;        /* Optional: round corners */
+    border: 1px solid #ddd;     /* Optional: border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#games .project-image img:hover {
+    transform: scale(1.2);      /* Enlarge the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Optional: shadow */
+}
+
+
+
 
 @media (max-width:1023px){
     header{
